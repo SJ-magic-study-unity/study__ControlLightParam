@@ -14,16 +14,16 @@ using UnityEngine;
 /************************************************************
 ************************************************************/
 public class ControlLightParam : MonoBehaviour {
-	[SerializeField] Light light; // 本scriptをLight object以外にattachし、外部から設定する場合.
+	[SerializeField] Light lt; // 本scriptをLight object以外にattachし、外部から設定する場合.
 	Color col;
 	
 	void Start () {
-		// light = GetComponent<Light>(); // 本scriptをLight objectにattachする場合.
+		// lt = GetComponent<Light>(); // 本scriptをLight objectにattachする場合.
 		
 		col = new Color(1.0f, 1.0f, 0.0f, 1.0f);
-		light.color = col;
+		lt.color = col;
 		
-		light.intensity = 2.0f;
+		lt.intensity = 2.0f;
 	}
 	
 	void Update () {
